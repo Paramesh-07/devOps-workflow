@@ -1,0 +1,8 @@
+name: pull_request_workflow
+on: pull_request
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pull-request
+        run: pwd
