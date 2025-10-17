@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: calling secret var
-        run: echo "Hi my name is ${{var.user_name}} and here is the ${{secrets.password}}
+        run: echo "Hi my name is ${{var.user_name}} and here is the ${{secrets.password}}"
 
 
         
