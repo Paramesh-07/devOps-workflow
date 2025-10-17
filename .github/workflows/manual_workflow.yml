@@ -6,8 +6,19 @@ jobs:
     steps:
       - name: display content
         run: echo "Hello world"
+      - name: display os
+        run: cat /etc/os-release
   test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: display content
         run: echo "Hello jaga"
+      - name: checkout pre-defined
+        uses: actions/checkout@v5.0.0
+      - name: listing files
+        run: |
+          ls
+          pwd
+
+        
