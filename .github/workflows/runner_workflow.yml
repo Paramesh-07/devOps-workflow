@@ -9,7 +9,7 @@ jobs:
       - name: listing files
         run: ls
   test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: listing files
         run: ls
