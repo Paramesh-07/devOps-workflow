@@ -1,0 +1,35 @@
+name: runner_workflow
+on : workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: adding text file
+        run: echo "Hello world" > text.txt
+      - name: listing files
+        run: ls
+  test:
+    runs-on: windows
+    steps:
+      - name: listing files
+        run: ls
+      - name: display content
+        run: cat text.txt
+##########################################
+  build1:
+    runs-on: self-hosted
+    steps:
+      - name: adding text file
+        run: echo "Hello world" > text.txt
+      - name: listing files
+        run: ls
+  test1:
+    runs-on: paramesh
+    steps:
+      - name: listing files
+        run: ls
+      - name: display content
+        run: cat text.txt
+
+        
+        
