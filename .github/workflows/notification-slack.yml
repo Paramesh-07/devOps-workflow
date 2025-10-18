@@ -1,0 +1,14 @@
+name: notification-slack
+on: workflow_dispatch
+jobs:
+  notification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: slack notification
+        uses: slackapi/slack-github-action@v2.1.1
+        with:
+          webhook: ${{Webhook}}
+          webhook-type: incoming-webhook
+          payload: |
+            channel: slack-notification
+            text: Hello world
