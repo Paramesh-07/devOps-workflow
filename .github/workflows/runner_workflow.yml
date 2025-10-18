@@ -15,7 +15,9 @@ jobs:
         run: ls
       - name: display content
         run: cat text.txt
+        
 ##########################################
+
   build1:
     runs-on: self-hosted
     steps:
