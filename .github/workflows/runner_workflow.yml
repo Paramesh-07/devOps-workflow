@@ -15,7 +15,6 @@ jobs:
         run: ls
         
 ##########################################
-
   build1:
     runs-on: self-hosted
     steps:
@@ -28,8 +27,6 @@ jobs:
     steps:
       - name: listing files
         run: ls
-      - name: display content
-        run: cat file.txt
 
         
         
