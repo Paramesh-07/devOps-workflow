@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: adding text file
-        run: echo "Hello world" > file.txt
+        run: echo "Hello world" > file1.txt
       - name: listing files
         run: ls
   test:
@@ -19,7 +19,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: adding text file
-        run: echo "Hello world" > file.txt
+        run: echo "Hello world" > file2.txt
       - name: listing files
         run: ls
   test1:
